@@ -52,23 +52,28 @@
 
   /* ---------- ANNOUNCEMENT BANNER ---------- */
   .announce-banner{
-    background:var(--slate);
-    color:var(--paper);
-    border-bottom:1px solid var(--slate-line);
-    padding:12px 32px;
+    background:#8a1f1f;
+    color:#fff;
+    border-bottom:3px solid #5e1414;
+    padding:22px 32px;
     text-align:center;
-    font-size:14.5px;
-  }
-  .announce-banner strong{
-    color:var(--paper);
-    font-weight:600;
   }
   .announce-banner .wrap{
     display:flex;
+    flex-direction:column;
     align-items:center;
     justify-content:center;
-    gap:8px;
-    flex-wrap:wrap;
+    gap:4px;
+  }
+  .announce-banner .headline{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:26px;
+    letter-spacing:0.01em;
+  }
+  .announce-banner .subline{
+    font-size:15.5px;
+    color:#ffd9d9;
   }
 
   /* ---------- HEADER ---------- */
@@ -437,7 +442,9 @@
     section{padding:64px 0;}
     .wrap{padding:0 22px;}
     .foot-wrap{flex-direction:column;gap:8px;text-align:center;}
-    .announce-banner{padding:10px 16px;font-size:13px;}
+    .announce-banner{padding:16px 16px;}
+    .announce-banner .headline{font-size:19px;}
+    .announce-banner .subline{font-size:13.5px;}
   }
 </style>
 </head>
@@ -445,7 +452,8 @@
 
 <div class="announce-banner">
   <div class="wrap">
-    <span>We are currently not taking on-site customers at this time due to health reasons. Remote support is still available — <strong>call 501-777-8209</strong>.</span>
+    <div class="headline">CLOSED — NOT TAKING NEW CLIENTS AT THIS TIME</div>
+    <div class="subline">Due to a health issue. Thank you for your understanding.</div>
   </div>
 </div>
 
